@@ -1,6 +1,6 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter ,Routes,Route} from "react-router-dom";
 
-import {Contact,Navbar} from "./components";
+import {Contact,Contact2,Contact3,Navbar} from "./components";
 
 const App = () => {
   return (
@@ -10,7 +10,12 @@ const App = () => {
           <Navbar />
         </div>
         <div className='relative z-0'>
-          <Contact />
+          <Routes>
+            <Route path="/" element={<Contact/>}/>
+            <Route path="/Contact" element={<Contact/>}/>
+            <Route path="/Contact2" element={<Contact2/>}/>
+            <Route path="/Contact3" element={<Contact3/>}/>
+          </Routes>
         </div>
       </div>
     </BrowserRouter>
