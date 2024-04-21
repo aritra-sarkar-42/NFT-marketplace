@@ -1,6 +1,7 @@
 import React from "react"
 import { BrowserRouter } from "react-router-dom";
-import { Navbar, Body } from "./components"
+import { Navbar, Body , Mynfts } from "./components"
+
 function App() {
 
   return (
@@ -10,7 +11,7 @@ function App() {
           <Navbar />
           <Body />
         </div>
-        
+        <Mynfts />
       </div>
     </BrowserRouter>
   )
