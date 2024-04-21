@@ -71,7 +71,7 @@ const Contact = () => {
           </label>
 
           <Link
-          to='/'
+          to='/contact3'
           className='flex items-center gap-2'
           onClick={() => {
             setActive("");
